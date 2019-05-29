@@ -12,5 +12,15 @@ print('档案读取完了，总共有', len(data), '笔资料')
 sum_len = 0
 for d in data:
 	sum_len += len(d)
-	print(sum_len)
+	#print(sum_len)
 print('留言的平均长度是', sum_len/len(data))
+
+#筛选
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('一共有', len(new), '笔留言长度小于100')
+print(new[0])
+print(new[1])
